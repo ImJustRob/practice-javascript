@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <meta charset="UTF-8">
+  <title>JavaScript Example</title>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+    <div id="container" style="width:100%; height:400px;"></div>
+  <h1>Hello from HTML!</h1>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const chart = Highcharts.chart('container', {
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'Fruit Consumption'
+            },
+            xAxis: {
+                categories: ['grapes', 'Bananas', 'Blue Berries']
+            },
+            yAxis: {
+                title: {
+                    text: 'Fruit eaten'
+                }
+            },
+            series: [{
+                name: 'Jane',
+                data: [1, 17, 4]
+            }, {
+                name: 'John',
+                data: [5, 7, 3]
+            }, {
+                name: 'Sarah',
+                data: [3, 11, 6]
+            }, {
+                name: 'Taylor',
+                data: [1, 7, 8]
+            }
+        ]
+        });
+    });
+   </script>
+</body>
+</html>
